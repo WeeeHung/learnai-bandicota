@@ -64,11 +64,6 @@ def sub_feature():
             
             if another_question:
                 time.sleep(3)
-                st.progress(0)
-                for i in range(1, 101):
-                    time.sleep(0.1)
-                    st.progress(i)
-                st.progress(0)
                 st.session_state.form_count += 1
             else:
                 st.stop()

@@ -10,7 +10,7 @@ def header():
         "Beyond detection, we are committed to educating and empowering users to recognize and combat scams effectively. "
         "Join us in the fight against fraudulent schemes and stay one step ahead in safeguarding your online presence."
     )
-
+    st.caption("Better Safe than Sorry.")
     st.caption(caption)
 
 def config():
