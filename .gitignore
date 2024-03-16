@@ -13,6 +13,9 @@ __pycache__/
 .env
 pyvenv.cfg
 
+# streamlit
+.streamlit/
+
 # Distribution / packaging
 .Python
 build/

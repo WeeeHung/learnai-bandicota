@@ -50,6 +50,5 @@ def analyze_text_for_scam(text):
     split_text = generated_text.split("Analysis Report:")
     scam_likelihood = split_text[0].split("Likelihood of being a scam:")[1].strip()
     generated_text = split_text[1]
-    print("\n\nscam_likelihood: ", scam_likelihood)
 
     return scam_likelihood, generated_text, response_time

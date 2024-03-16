@@ -13,9 +13,16 @@ def header():
 
     st.caption(caption)
 
+def config():
+    st.set_page_config(
+        page_title="Bandicota.ai - Scam Analyzer",
+        page_icon=":rat:",
+    )
 
 # Main app layout
 def main():
+    
+    config()
     # Render header component
     header()
 
