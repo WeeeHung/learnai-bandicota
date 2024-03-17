@@ -27,7 +27,7 @@ def sub_feature():
         "Here, you'll embark on a journey of discovery, where real-world scenarios challenge your ability to spot phishing attempts. "
         "Learn to distinguish between genuine communications and deceptive tactics, empowering yourself to safeguard your online presence."
     )
-    st.caption(caption)    
+    st.info(caption)    
 
     if st.button("Generate Question", type="primary") or 'form_count' in st.session_state:
 

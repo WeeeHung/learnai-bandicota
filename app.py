@@ -1,6 +1,7 @@
 import streamlit as st
 from component.mainfeature import main_feature
 from component.subfeature1 import sub_feature
+from component.homefeature import home_component
 
 def header():
     st.title("Bandicota.ai")
@@ -26,13 +27,19 @@ def main():
     # Render header component
     header()
 
-    # Render main feature component
-    main_feature()
+    home, detection, education = st.tabs(["Home", "Detection", "Education"])
 
-    # add some space maybe
+    # Render home component
+    with home:
+        home_component()
+
+    # Render main feature component
+    with detection:
+        main_feature()
     
     # Render sub-feature component
-    sub_feature()
+    with education:
+        sub_feature()
 
 if __name__ == "__main__":
     main()

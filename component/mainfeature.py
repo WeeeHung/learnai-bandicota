@@ -40,11 +40,20 @@ def analyze_and_display(user_input):
         likelihood_to_color(scam_likelihood)
         st.write(scam_report)
     
-   
+def display_banner():
+    
+    st.info("Scam Detector is a tool that uses a large language model to analyze text for potential scam indicators. "
+            "Refrain from entering sensitive information such as passwords, credit card numbers, or personal data. "
+            "Paste the text you want to analyze in the box below and click 'Check for Scam' to get started.")
 
 # Define main feature component
 def main_feature():
+    
     st.subheader('Scam Detector', divider='rainbow')
+    
+    # changing banner text that swaps every 3 seconds
+    display_banner()
+
     # Input for checking if scam
     user_input = st.text_area("Enter text to check if it's a scam")
 
