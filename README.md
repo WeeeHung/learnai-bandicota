@@ -14,7 +14,7 @@ Join us in the fight against fraudulent schemes and stay one step ahead in safeg
    ```
 2. Navigate to the project directory:
    ```
-   cd project
+   cd learnai-bandicota
    ```
 3. Create a virtual environment:
    ```
