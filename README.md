@@ -48,6 +48,7 @@ Join us in the fight against fraudulent schemes and stay one step ahead in safeg
 This project is organized as follows:
 
 - **`component/`**: Contains the features built for the webapp, such as the scam detection and scam education features.
+    - **`homefeature.py`**: Contains the introduction and information on why scam detection and scam education are important.
     - **`mainfeature.py`**: Contains the scam detection feature. It provides the frontend layout using Streamlit and does text analysis using the llm.scamanalyzer module.
     - **`subfeature.py`**: Contains the scam education feature. It provides the frontend layout using Streamlit and generates questions based on email or text extracts using the llm.textgenerator module.
 - **`llm/`**: Contains helper functions that make OpenAI API calls and perform operations using GPT-3.5 Turbo, such as text generation and text analysis.
@@ -56,6 +57,11 @@ This project is organized as follows:
     - **`client.py`**: Contains the OpenAI API client used to make API calls.
 - **`.streamlit/secrets.toml`**: Contains the OpenAI API key used to make API calls. (git ignored as it contains sensitive information) 
 - **`app.py`**: The main file that runs the web application.
+- **`logo1.png`**: The logo used for the webapp.
+
+Other files include:
+- **`README.md`**: Contains the information about the project.
+- **`requirements.txt`**: Contains the required dependencies for the project.
 
 
 ### Main Technologies Used
