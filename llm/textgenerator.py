@@ -71,7 +71,7 @@ def generate_possible_text():
     print("\n\ngenerated_text: ", generated_text)
 
     scam_likelihood = rand_chosen_risk_level
-    explanation = f"The risk level is {rand_chosen_risk_level}"
+    explanation = f"The risk level is {rand_chosen_risk_level}" # default explanation
 
     # parse generated text
     split_text = generated_text.split("Explanation:")
