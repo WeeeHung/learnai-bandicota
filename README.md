@@ -4,6 +4,10 @@ Powered by LLM (Large Language Model), our app serves as your vigilant guardian,
 Beyond detection, we are committed to educating and empowering users to recognize and combat scams effectively. 
 Join us in the fight against fraudulent schemes and stay one step ahead in safeguarding your online presence.
 
+## Deployed Link
+
+Enter this [link](https://bandicota-ai.streamlit.app/) via mobile or desktop for easy access to the deployed webapp:
+
 
 ## Setup
 
