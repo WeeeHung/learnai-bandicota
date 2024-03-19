@@ -6,7 +6,7 @@ Join us in the fight against fraudulent schemes and stay one step ahead in safeg
 
 ## Deployed Link
 
-Enter this [link](https://bandicota-ai.streamlit.app/) via mobile or desktop for easy access to the deployed webapp:
+Enter this [link](https://bandicota-ai.streamlit.app/) via mobile or desktop for easy access to the deployed webapp.
 
 
 ## Setup
