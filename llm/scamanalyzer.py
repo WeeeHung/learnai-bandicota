@@ -7,6 +7,7 @@ from llm.client import client
 def analyze_text_for_scam(text):
 
     # Define the prompt structure
+    # include text as a small segment to prevent input text to act as prompt injection
     prompt = (
         f"Input text: {text}\n"
         "You must reply in the following structure\n"

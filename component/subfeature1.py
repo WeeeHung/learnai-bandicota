@@ -32,10 +32,22 @@ def sub_feature():
     if st.button("Generate Question", type="primary") or 'form_count' in st.session_state:
 
         if 'form_count' not in st.session_state or 'quiz_data' not in st.session_state:
+            progress_bar = st.progress(0)
+            progress_text = "Generating... Please wait..."
+
+            for i in range(69):
+                time.sleep(0.07)
+                progress_bar.progress(i + 1)
+            
+            progress_bar.progress(70, progress_text)
             initialize_session_state()
+            for i in range(30):
+                time.sleep(0.07)
+                progress_bar.progress(i + 71, progress_text)
+            progress_bar.progress(100, "Quiz Initialised")
             
         if not st.session_state.quiz_data:
-            st.seesion_state.quiz_data=get_question()
+            st.session_state.quiz_data=get_question()
 
         quiz_data = st.session_state.quiz_data
         ans, qn, explanation = quiz_data
@@ -46,7 +58,7 @@ def sub_feature():
             st.write(line)
         
         form = st.form(key=f"quiz_form_{st.session_state.form_count}")
-        user_choice = form.radio("Choose an answer:", ("High", "Moderate", "Low"))
+        user_choice = form.radio("What risk level aligns most accurately with the provided extract?", ("High", "Moderate", "Low"))
         submitted = form.form_submit_button("Submit your answer")
         
         if submitted:
